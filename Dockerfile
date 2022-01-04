@@ -18,6 +18,7 @@ RUN curl -L \
 
 FROM mono:6.10-slim AS runner
 
+ARG SERVER_VER="1423"
 ARG UID="999"
 
 ENV INSTALL_LOC="/terraria"
