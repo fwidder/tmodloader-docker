@@ -26,7 +26,7 @@ If you have a world you've previously generated, you can use it as a drop-in wit
 1. Run the server:
 
 ```bash
-docker run -v <absolute-path-to-folder-with-worlds>:/worlds -p 7777:7777 fragsoc/tmodloader
+docker run -v <absolute-path-to-folder-with-worlds>:/worlds -p 7777:7777 ghcr.io/fwidder/tmodloader
 ```
 
 ## Without World
@@ -36,7 +36,7 @@ If you want to use the server to generate a world, you need to use the interacti
 1. Run the server to generate the world (don't forget those speech marks):
 
 ```bash
-docker run -it --rm -v <absolute-path-to-folder-to-put-worlds-in>:/worlds fragsoc/tmodloader ""
+docker run -it --rm -v <absolute-path-to-folder-to-put-worlds-in>:/worlds ghcr.io/fwidder/tmodloader ""
 ```
 
 2. Follow the onscreen prompts to generate your world - **name it `dockerWorld`**
