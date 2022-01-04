@@ -35,7 +35,7 @@ COPY --from=downloader /tmp/${SERVER_VER}/Linux ${INSTALL_LOC}
 COPY --from=downloader /tmp/tModLoader/* ${INSTALL_LOC}/
 COPY ./default-config.txt /default-config.txt
 
-RUN chmod +x ${INSTALL_LOC}/tModLoaderServer* && \
+RUN chmod +x ${INSTALL_LOC}/tModLoader64BitServer* && \
     mkdir -p ${TERRARIA_DATA} ${LOGS_LOC} && \
     ln -s ${WORLDS_LOC} ${TERRARIA_DATA}/Worlds && \
     ln -s ${MODS_LOC} ${TERRARIA_DATA}/Mods && \
