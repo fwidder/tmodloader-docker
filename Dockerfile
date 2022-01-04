@@ -16,7 +16,7 @@ RUN curl -L \
     unzip -d /tmp /tmp/terrariaServer.zip && \
     unzip -d /tmp/tModLoader /tmp/tModLoader.zip
 
-FROM mono:6.10-slim AS runner
+FROM mono:6 AS runner
 
 ARG SERVER_VER="1423"
 ARG UID="999"
