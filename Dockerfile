@@ -12,7 +12,7 @@ RUN curl -L \
         https://terraria.org/api/download/pc-dedicated-server/terraria-server-${SERVER_VER}.zip && \
     curl -L \
         -o /tmp/tModLoader.zip \
-        https://github.com/tModLoader/tModLoader/releases/download/${TMODLOADER_VERSION}/tModLoader.Linux.${TMODLOADER_VERSION}.zip && \
+        https://github.com/Dradonhunter11/tModLoader64bit/releases/download/${TMODLOADER_VERSION}/tModLoader64Bit-Linux-Server.zip && \
     unzip -d /tmp /tmp/terrariaServer.zip && \
     unzip -d /tmp/tModLoader /tmp/tModLoader.zip
 
@@ -46,5 +46,5 @@ VOLUME ${WORLDS_LOC} ${MODS_LOC}
 WORKDIR ${INSTALL_LOC}
 EXPOSE 7777
 # USER terraria
-ENTRYPOINT ["./tModLoaderServer.bin.x86_64"]
+ENTRYPOINT ["./tModLoader64BitServer"]
 CMD ["-config", "/default-config.txt"]
